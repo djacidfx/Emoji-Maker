@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltTabbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00c7a8"
+        android:paddingTop="@dimen/p10dp"
+        android:paddingBottom="@dimen/p10dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/p40dp"
+            android:layout_height="@dimen/p40dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/p15dp"
+            android:paddingRight="@dimen/p15dp"
+            android:src="@drawable/back" />
+
+        <com.demo.example.emoji.customview.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/p10dp"
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="@string/customize"
+            android:textColor="@color/colorfff"
+            android:textSize="@dimen/text_sz_18sp" />
+
+        <ImageView
+            android:id="@+id/imgSaveEmoji"
+            android:layout_width="@dimen/p40dp"
+            android:layout_height="@dimen/p40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/p10dp"
+            android:paddingRight="@dimen/p10dp"
+            android:src="@drawable/done" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rltFunction"
+        android:layout_below="@+id/rltTabbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="#f4f4f7">
+
+        <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+            android:id="@+id/maskLayout"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            app:porterduffxfermode="DST_IN">
+
+            <com.demo.example.emoji.ultis.TouchImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+        <ImageView
+            android:id="@+id/imgTrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/btn_click_gallery" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rltFunction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <it.sephiroth.android.library.widget.HListView
+            android:id="@+id/hlvShapeDemo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#f0eff4" />
+
+        <RelativeLayout
+            android:id="@+id/rltBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p70dp"
+            android:background="#00c7a8"
+            android:paddingTop="@dimen/p5dp"
+            android:paddingBottom="@dimen/p5dp">
+
+            <ImageView
+                android:id="@+id/imgOpenAll"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/p20dp"
+                android:padding="@dimen/p5dp"
+                android:src="@drawable/btn_emoji_open" />
+
+            <ImageView
+                android:id="@+id/imgOpenCamera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/p20dp"
+                android:layout_toLeftOf="@+id/imgOpenGallery"
+                android:padding="@dimen/p5dp"
+                android:src="@drawable/camera" />
+
+            <ImageView
+                android:id="@+id/imgOpenGallery"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/p20dp"
+                android:padding="@dimen/p5dp"
+                android:src="@drawable/add_photo" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

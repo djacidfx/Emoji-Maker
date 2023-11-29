@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/grvSymbol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnlScrollInputText"
+        android:layout_marginTop="@dimen/p5dp"
+        android:layout_marginBottom="@dimen/p5dp"
+        android:horizontalSpacing="@dimen/p5dp"
+        android:numColumns="6"
+        android:verticalSpacing="@dimen/p5dp" />
+
+    <LinearLayout
+        android:id="@+id/lnlScrollInputText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5" />
+</RelativeLayout>

@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+    defaultConfig {
+        applicationId 'work.mywild.emoji'
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resourceConfigurations += ['en']
+        multiDexEnabled true
+    }
+
+    bundle {
+        density {
+            enableSplit true
+        }
+        abi {
+            enableSplit true
+        }
+        language {
+            enableSplit false
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.demo.example'
+
+
+    applicationVariants.all {
+        compileConfiguration.resolutionStrategy {
+
+        }
+
+        runtimeConfiguration.resolutionStrategy {
+
+        }
+        annotationProcessorConfiguration.resolutionStrategy {
+
+        }
+    }
+
+
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'org.jetbrains:annotations:24.1.0'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.github.christophesmet:android_maskable_layout:v1.3.1'
+    implementation 'com.daimajia.androidanimations:library:2.4'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.soundcloud.android:android-crop:1.0.1'
+    implementation 'com.tiagosantos:enchantedviewpager:1.1.0'
+
+    implementation 'com.github.chenupt.android:springindicator:1.0.2@aar'
+    implementation 'it.sephiroth.android.library.horizontallistview:hlistview:1.3.1'
+  implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    implementation 'jp.wasabeef:blurry:4.0.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.28'
+    implementation 'org.jsoup:jsoup:1.17.1'
+    implementation 'com.github.dmfs:color-picker:1.3'
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
+   // implementation 'androidx.work:work-runtime-ktx:2.7.0-alpha05'
+
+
+}

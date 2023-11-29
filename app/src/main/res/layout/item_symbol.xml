@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgEmoji"
+        android:layout_width="@dimen/p50dp"
+        android:layout_height="@dimen/p50dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="@dimen/p50dp"
+        android:layout_height="@dimen/p50dp"
+        android:gravity="center"
+        android:text="Symbol"
+        android:textColor="@color/color000"
+        android:textSize="@dimen/text_sz_20sp" />
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#00c7aa</color>
+    <color name="colorPrimary">#00c7aa</color>
+    <color name="colorPrimaryDark">#00c7aa</color>
+    <color name="bg_clay_grape">#9b26af</color>
+    <color name="color000">#000</color>
+    <color name="color_0">#f44336</color>
+    <color name="color_00">#000000</color>
+    <color name="color_01">#ffffff</color>
+    <color name="color_02">#0047b9</color>
+    <color name="color_03">#84de03</color>
+    <color name="color_04">#c5620d</color>
+    <color name="color_05">#efdece</color>
+    <color name="color_06">#64619a</color>
+    <color name="color_07">#cd9574</color>
+    <color name="color_08">#fcdab5</color>
+    <color name="color_09">#5ebed7</color>
+    <color name="color_1">#ff9800</color>
+    <color name="color_2">#ffeb3b</color>
+    <color name="color_3">#4caf50</color>
+    <color name="color_4">#03a9f4</color>
+    <color name="color_5">#2196f3</color>
+    <color name="color_6">#9c27b0</color>
+    <color name="color_item_preview_text">#46b9fa</color>
+    <color name="colore95d61">#e95d61</color>
+    <color name="colorfff">#fff</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="error_color_material">#f4511e</color>
+    <color name="gridColor">#e8e8e8</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="makerBackground">#ffffff</color>
+    <color name="makerNavBackground">#00c7aa</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+    <color name="si_default_indicator_bg">#ee9999</color>
+    <color name="si_default_text_color">#ff0000</color>
+    <color name="si_default_text_color_selected">#ff00ff</color>
+
+    <dimen name="crop__bar_height">56dp</dimen>
+
+</resources>

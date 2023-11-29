@@ -1,0 +1,27 @@
+<resources>
+
+
+    <string name="app_name">Emoji Maker</string>
+    <string name="clear_all">Clear All</string>
+    <string name="crop__cancel">CANCEL</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="customize">Customize Smileys</string>
+    <string name="define_roundedimageview" />
+    <string name="deleted">Deleted</string>
+    <string name="do_you_want_delete">Do you want to detele this emoji?</string>
+    <string name="emoji_maker">Emoji Maker</string>
+    <string name="my_smileys">My Smileys</string>
+    <string name="no">No</string>
+    <string name="no_emoji">No Emoji</string>
+    <string name="no_thanks">Remind me later</string>
+    <string name="ok">OK</string>
+    <string name="photo">PHOTO</string>
+    <string name="saved">Saved</string>
+    <string name="search_menu_title">Search</string>
+    <string name="set_wallpaper">Set wallpaper</string>
+
+
+</resources>

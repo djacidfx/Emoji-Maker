@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="p05dp">0.5dp</dimen>
+    <dimen name="p10dp">10dp</dimen>
+    <dimen name="p15dp">15dp</dimen>
+    <dimen name="p1dp">1dp</dimen>
+    <dimen name="p20dp">20dp</dimen>
+    <dimen name="p30dp">30dp</dimen>
+    <dimen name="p35dp">35dp</dimen>
+    <dimen name="p3dp">3dp</dimen>
+    <dimen name="p40dp">40dp</dimen>
+    <dimen name="p45dp">45dp</dimen>
+    <dimen name="p50dp">50dp</dimen>
+    <dimen name="p5dp">5dp</dimen>
+    <dimen name="p60dp">60dp</dimen>
+    <dimen name="p70dp">70dp</dimen>
+    <dimen name="p74dp">74dp</dimen>
+    <dimen name="p8dp">8dp</dimen>
+    <dimen name="si_default_radius_max">24dp</dimen>
+    <dimen name="si_default_radius_min">8dp</dimen>
+    <dimen name="si_default_text_size">18sp</dimen>
+    <dimen name="size_press">150dp</dimen>
+    <dimen name="text_sz_13sp">13sp</dimen>
+    <dimen name="text_sz_14sp">14sp</dimen>
+    <dimen name="text_sz_15sp">15sp</dimen>
+    <dimen name="text_sz_16sp">16sp</dimen>
+    <dimen name="text_sz_18sp">18sp</dimen>
+    <dimen name="text_sz_19sp">19sp</dimen>
+    <dimen name="text_sz_20sp">20sp</dimen>
+    <dimen name="text_sz_23sp">23sp</dimen>
+</resources>

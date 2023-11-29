@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rltEmoji"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgComponent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imgLock"
+        android:layout_width="@dimen/p20dp"
+        android:layout_height="@dimen/p20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/p3dp"
+        android:layout_marginEnd="@dimen/p3dp"
+        android:layout_marginBottom="@dimen/p3dp"
+        android:src="@drawable/lock_in_emoji" />
+
+    <ImageView
+        android:id="@+id/shapeSelect"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_check_circle" />
+</RelativeLayout>

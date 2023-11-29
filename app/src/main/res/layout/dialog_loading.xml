@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/p10dp"
+        android:paddingEnd="@dimen/p10dp">
+
+        <ImageView
+            android:id="@+id/im_dialog_loading"
+            android:layout_width="@dimen/p40dp"
+            android:layout_height="@dimen/p40dp"
+            android:padding="@dimen/p5dp"
+            android:src="@drawable/icon_loading" />
+
+        <com.demo.example.emoji.customview.RobotoRegularTextView
+            android:id="@+id/tv_dialog_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/p5dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/makerBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="14">
+
+        <RelativeLayout
+            android:id="@+id/rltTabbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/makerNavBackground"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/p5dp"
+            android:paddingBottom="@dimen/p5dp">
+
+            <com.demo.example.emoji.customview.RobotoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/emoji_maker"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_sz_18sp" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/p10dp"
+                android:src="@drawable/ic_close" />
+
+            <ImageView
+                android:id="@+id/imgSaveEmojiShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/p10dp"
+                android:src="@drawable/btn_emoji_save" />
+
+            <ImageView
+                android:id="@+id/imgOpenMyShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/p10dp"
+                android:layout_toStartOf="@+id/imgSaveEmojiShop"
+                android:src="@drawable/btn_emoji_open" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltEmojiBig"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/imgBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/rltEmoji"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgEmoji"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekbarBlur"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:max="24"
+                android:progress="2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:id="@+id/topControl"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:background="#f0eff4">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/linearScroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3" />
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltShape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/adView"
+                android:layout_below="@+id/topControl"
+                android:background="#fff">
+
+                <GridView
+                    android:id="@+id/gvShape"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/p10dp"
+                    android:layout_marginBottom="@dimen/p1dp"
+                    android:background="#fff"
+                    android:horizontalSpacing="@dimen/p5dp"
+                    android:numColumns="6"
+                    android:verticalSpacing="@dimen/p10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rltBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/gvBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/p1dp"
+                        android:background="#fff"
+                        android:horizontalSpacing="@dimen/p5dp"
+                        android:numColumns="3"
+                        android:verticalSpacing="@dimen/p5dp" />
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/lnlTextEmojiShop"
+                    layout="@layout/include_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/rltInputText"
+                    layout="@layout/include_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/p5dp"
+        android:layout_marginBottom="@dimen/p50dp"
+        android:visibility="gone">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabColors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_linked_camera"
+            app:fab_label="color" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_linked_camera"
+            app:fab_label="from camera" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="from gallery" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
